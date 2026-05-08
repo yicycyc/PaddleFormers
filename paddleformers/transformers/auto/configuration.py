@@ -61,6 +61,9 @@ CONFIG_MAPPING_NAMES = OrderedDict(
         ("glm_ocr", "GlmOcrConfig"),
         ("qwen3_5", "Qwen3_5Config"),
         ("qwen3_5_moe", "Qwen3_5MoEConfig"),
+        ("pixtral", "PixtralVisionConfig"),
+        ("pixtral_vlm", "PixtralConfig"),
+        ("mistral3", "Mistral3Config"),
     ]
 )
 
@@ -89,6 +92,9 @@ MODEL_NAMES_MAPPING = OrderedDict(
         ("glm_ocr", "GlmOcrForConditionalGeneration"),
         ("qwen3_5_moe", "Qwen3_5MoEForConditionalGeneration"),
         ("qwen3_5", "Qwen3_5ForConditionalGeneration"),
+        ("pixtral", "PixtralVisionModel"),
+        ("pixtral_vlm", "PixtralForConditionalGeneration"),
+        ("mistral3", "Mistral3ForConditionalGeneration"),
     ]
 )
 

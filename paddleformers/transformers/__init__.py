@@ -295,6 +295,12 @@ import_structure = {
     "qwen3_vl": [],
     "qwen3_5": [],
     "qwen3_vl_moe": [],
+    "pixtral.configuration": ["PixtralVisionConfig"],
+    "pixtral.modeling": ["PixtralVisionModel", "PixtralPretrainedModel"],
+    "pixtral": [],
+    "mistral3.configuration": ["Mistral3Config"],
+    "mistral3.modeling": ["Mistral3Model", "Mistral3ForConditionalGeneration", "Mistral3PretrainedModel"],
+    "mistral3": [],
     "qwen2_moe": [],
     "qwen2_vl": [],
     "qwen3_moe": [],
@@ -410,6 +416,8 @@ if TYPE_CHECKING:
     from .phi3 import *
     from .gemma3_text import *
     from .glm_ocr import *
+    from .pixtral import *
+    from .mistral3 import *
 else:
     sys.modules[__name__] = _LazyModule(
         __name__,
